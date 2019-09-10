@@ -2,3 +2,4 @@
 str1 = "Holberton"
 str2 = "School"
 print("Welcome to {} {}!".format(str1[0:9], str2[0:6]))
+

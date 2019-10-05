@@ -1,0 +1,39 @@
+The ``3-say_my_name`` module
+========================
+
+Using ``say_my_name``
+------------------------
+
+This test text file in for fuction say_my_name. First import
+``say_my_name`` from the ``3-say_my_name`` module:
+
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Now use it:
+
+    >>> say_my_name("John","Smith") 
+    My name is John Smith
+    >>> say_my_name(12, "Smith")
+    Traceback (most recent call last):
+    ...
+    TypeError: first_name must be a string
+    >>> say_my_name(2 * "John", "Smith")
+    My name is JohnJohn Smith
+    >>> say_my_name(4 + "Smith")
+    Traceback (most recent call last):
+    ...
+    TypeError: unsupported operand type(s) for +: 'int' and 'str'
+    >>> say_my_name({"John"}, {"Smith"})
+    Traceback (most recent call last):
+    ...
+    TypeError: first_name must be a string
+    >>> say_my_name("John", "Smith')
+    Traceback (most recent call last):
+    ...
+    SyntaxError: EOL while scanning string literal
+    >>> say_my_name(f"{John}" "{Smith}")
+    Traceback (most recent call last):
+    ...
+    NameError: name 'John' is not defined
+    >>> say_my_name("John", "Smith",)
+    My name is John Smith

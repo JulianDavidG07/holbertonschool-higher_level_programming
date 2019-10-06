@@ -19,8 +19,8 @@ Now use it:
     Traceback (most recent call last):
     ...
     TypeError: text_indentation() missing 1 required positional argument: 'text'
-    >>> text_indentation ('Holberton')
-    Holberton
+    >>> text_indentation ('Holberton School')
+    Holberton School
     >>> text_indentation (':')
     :
     >>> text_indentation (3 * 'a')
@@ -28,4 +28,4 @@ Now use it:
     >>> text_indentation (dict("holber shcool"))
     Traceback (most recent call last):
     ...
-    SyntaxError: unexpected EOF while parsing
+    ValueError: dictionary update sequence element #0 has length 1; 2 is required

@@ -17,7 +17,5 @@ def text_indentation(text):
     text = text.replace(". ", ".\n\n")
     text = text.replace(".", ".\n")
     text = text.replace("? ", "?\n\n")
-    text = text.replace("?", "?\n")
     text = text.replace(": ", ":\n\n")
-    text = text.replace(":", ":\n")
     print(text)

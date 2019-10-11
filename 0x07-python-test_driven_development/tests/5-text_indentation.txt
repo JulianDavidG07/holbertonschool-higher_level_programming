@@ -1,4 +1,4 @@
-The "5-print_square" module
+The "5-text_indentation" module
 =========================
 
 Using "text_indentation"

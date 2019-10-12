@@ -19,6 +19,12 @@ class TestMaxInteger(unittest.TestCase):
     def test_unordered_list(self):
         self.assertEqual(max_integer([1, 3, 4, 2]), 4)
 
+    def test_nun_negative_list(self):
+        self.assertEqual(max_integer([1, -4, 4, 2]), 4)
+
+    def test_negative_list(self):
+        self.assertEqual(max_integer([-2, -4, -2, 4]), 4)
+
     def test_strings_in_list(self):
         with self.assertRaises(TypeError) as msg:
             max_integer([1, "a", 2])

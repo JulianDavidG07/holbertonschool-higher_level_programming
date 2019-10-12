@@ -23,7 +23,7 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer([4]), 4)
 
     def test_negative_list(self):
-        self.assertEqual(max_integer([-2, -4, -2, 4]), 4)
+        self.assertEqual(max_integer([-6, -4, -5, -8]), -4)
 
     def test_strings_in_list(self):
         with self.assertRaises(TypeError) as msg:

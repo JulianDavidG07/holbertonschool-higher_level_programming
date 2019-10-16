@@ -1,0 +1,25 @@
+Test file '7-base_geometry.py'
+=========================
+
+Using 'BaseGeometry'
+-------------------------
+
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+Case 0 - Exits:
+    ...
+    
+Case 1 - Errors:
+
+    >>> bg = BaseGeometry('Holberton', 09)
+    Traceback (most recent call last):
+    ...
+    SyntaxError: invalid token
+
+    >>> bg = BaseGeometry('Holberton', -9)
+    Traceback (most recent call last):
+    ...
+    TypeError: object() takes no parameters
+
+    >>> bg = BaseGeometry()
+    [TypeError] integer_validator() missing 2 required positional arguments: 'name' and 'value'

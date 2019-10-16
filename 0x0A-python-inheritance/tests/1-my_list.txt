@@ -1,0 +1,23 @@
+Test file '1-my_list.py'
+=========================
+
+Using 'MyList'
+-------------------------
+
+    >>> MyList = __import__('1-my_list').MyList
+
+Case 0 - Exit:
+
+    ...
+
+Case 1 - Errors:
+
+    >>> my_list = MyList([1, , 2, 3, 5])
+    Traceback (most recent call last):
+    ...
+    SyntaxError: invalid syntax
+
+    >>> my_list = MyList([1, a, 2, 3, 5])
+    Traceback (most recent call last):
+    ...
+    NameError: name 'a' is not defined

@@ -10,4 +10,4 @@ def class_to_json(obj):
     ''''
     object in JSON format
     '''
-    return json.dumps(obj.__dict__)
+    return obj.__dict__

@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-import json
-
 '''
 funtion return a class format JSON
 '''

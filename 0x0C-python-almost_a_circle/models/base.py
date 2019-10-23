@@ -1,15 +1,15 @@
 #!/usr/bin/python3
-'''class Base 'main''''
+""" This module contains a class called Base. """
 
 
 class Base:
-
+    """ This is the base class. """
     __nb_objects = 0
 
     def __init__(self, id=None):
-        '''defines the initilization of the class'''
-        if id is not None:
-            self.id = id
+        """ Special method that inicialize all atributes """
+        if id is None:
+            Base.__nb_objects = Base.__nb_objects + 1
+            self.id = self.__nb_objects
         else:
-            Base.__nb_objects += 1
-            self.id = Base.__nb_objects
+            self.id = id

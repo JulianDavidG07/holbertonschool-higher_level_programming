@@ -1,5 +1,4 @@
--- script that creates the table id_not_null on your MySQL server.
-SELECT
-FROM
-ORDER BY
-IGNORE ALL;
+-- MySQL script that list all cities
+SELECT cities.id, cities.name, states.name
+FROM states, cities WHERE cities.state_id = states.id
+ORDER BY cities.id ASC;

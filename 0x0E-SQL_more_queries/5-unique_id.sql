@@ -1,5 +1,3 @@
--- script that creates the table id_not_null on your MySQL server.
-SELECT
-FROM
-ORDER BY
-IGNORE ALL;
+-- MySQL scrit that creates table with unique id
+CREATE TABLE IF NOT EXISTS unique_id (id INT DEFAULT 1 UNIQUE, name VARCHAR(256));
+                                                                            

@@ -10,3 +10,4 @@ with opener.open("https://intranet.hbtn.io/status") as f:
           '\t- utf8 content: {}'.format(type(url),
                                        url,
                                        url.decode('utf-8')))
+if __name__ == "__main__":

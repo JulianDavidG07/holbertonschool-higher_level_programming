@@ -10,5 +10,4 @@ if __name__ == "__main__":
 
         url = f.text
         print('Body response:\n\t- type: {}\n\t'
-              '- content: {}'.format(type(url),
-                                     url))
+              '- content: {}'.format(type(url), url))

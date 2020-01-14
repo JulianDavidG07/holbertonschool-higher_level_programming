@@ -4,7 +4,7 @@ Write a Python script that takes in a URL, sends a request to
 the URL and displays the body of the response (decoded in utf-8).
 """
 from urllib.request import Request, urlopen
-from urllib.request import URLError, HTTPError
+from urllib.error import URLError, HTTPError
 from sys import argv
 
 if __name__ == "__main__":

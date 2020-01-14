@@ -6,8 +6,7 @@ import requests
 
 if __name__ == "__main__":
 
-    with requests.get("https://intranet.hbtn.io/status") as f:
-
-        url = f.text
-        print('Body response:\n\t- type: {}\n\t'
-              '- content: {}'.format(type(url), url))
+    req = requests.get("https://intranet.hbtn.io/status")
+    url = req.text
+    print('Body response:\n\t- type: {}\n\t'
+          '- content: {}'.format(type(url), url))

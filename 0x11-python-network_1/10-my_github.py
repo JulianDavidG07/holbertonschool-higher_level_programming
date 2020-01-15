@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 """
-Write a Python script that takes in a URL,
-sends a request to the URL and displays
-the value of the variable X-Request-Id in the response header
+Write a Python script that takes your Github
+credentials (username and password) and uses the Github API to display your id
 """
 import requests
 import sys
 
 if __name__ == "__main__":
-    pass
+    response = requests.get('https://api.github.com/user',
+                            auth=(sys.argv[1], sys.argv[2]))
+    print(response.json().get('id'))

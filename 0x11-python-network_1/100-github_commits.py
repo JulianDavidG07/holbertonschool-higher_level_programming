@@ -17,4 +17,4 @@ if __name__ == "__main__":
 for i in range(10):
     commit = (response.json()[i].get('sha'))
     author = (response.json()[i].get('commit').get('author').get('name'))
-    print(f'{commit}: {author}')
+    print('{}: {}'.format(commit, author))

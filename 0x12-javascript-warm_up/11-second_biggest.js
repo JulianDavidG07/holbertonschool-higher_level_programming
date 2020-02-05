@@ -6,6 +6,5 @@ const myArg = process.argv.slice(2);
 if ((myArg.length === 0) || (myArg.length === 1)) {
   console.log('0');
 } else {
-  console.log(myArg.sort().reverse());
   console.log(myArg.sort().reverse()[1]);
 }

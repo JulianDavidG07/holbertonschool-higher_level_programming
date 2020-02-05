@@ -3,4 +3,6 @@
 
 const languages = ['C is fun', 'Python is cool', 'Javascript is amazing']
 
-languages.forEach(element => console.log(element))
+for (const element in languages) {
+  console.log(languages[element])
+}

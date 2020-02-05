@@ -2,10 +2,10 @@
 // Script that searches the second biggest integer in the list of arguments.
 
 const myArg = process.argv.slice(2);
-const newArray = myArg.sort().pop();
 
 if ((myArg.length === 0) || (myArg.length === 1)) {
   console.log('0');
 } else {
-  console.log(myArg.reverse()[0]);
+  console.log(myArg.sort().reverse());
+  console.log(myArg.sort().reverse()[1]);
 }

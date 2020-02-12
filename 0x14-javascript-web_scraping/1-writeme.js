@@ -10,4 +10,4 @@ try {
   // file written successfully
 } catch (err) {
   console.error(err);
-}
+};
